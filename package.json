@@ -5,8 +5,7 @@
   "author": "Bruno Annunciato",
   "private": true,
   "dependencies": {
-    "animate-sass": "tgdev/animate-sass",
-    "bootstrap-sass": "^3.3.7"
+    "animate-sass": "tgdev/animate-sass"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
