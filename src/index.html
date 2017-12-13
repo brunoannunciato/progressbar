@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,38 @@
     <link rel="stylesheet" href="css/style.css">
     <title>ProgressBar</title>
 </head>
-<body onload="init()">
-    
+
+<body>
+    <script>
+        var bar = {
+            progressName: 'grafico-01'
+        },
+            config = {
+                width: '250px',
+                height: '20px',
+                borderWidth: '1px',
+                borderStyle: 'solid',
+                borderColor: '#000',
+                borderRadius: '5px',
+                showProgress: true
+            },
+            progressBar = {
+                progress: '30%',
+                progressColor: '#00f000'
+            }
+    </script>
+
     <div class="container">
         <div class="progressive-bar">
             <div class="pb-bar">
-                <div class="pb-progress"></div>
+                <div class="pb-string"></div>
+                <div class="pb-progress">
+                </div>
             </div>
         </div>
     </div>
+    <script src="scripts/app.min.js" type="text/javascript"></script>
 
-    <script src="scripts/app.min.js"></script>
 </body>
+
 </html>

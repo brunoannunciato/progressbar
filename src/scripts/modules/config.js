@@ -1,24 +1,27 @@
+
+
 function configurations() {
     barSize();
     barBorder();
     showProgress();
     fillBar();
+    createBar();
 }
 
-var bar = document.querySelector('.pb-bar'),
+var wrapper = document.querySelector('.pb-bar'),
     progress = document.querySelector('.pb-progress');
 window.onload = configurations();
 
 function barSize() {
-    bar.style.width = config.width;
-    bar.style.height = config.height;
+    wrapper.style.width = config.width;
+    wrapper.style.height = config.height;
 }
 
 function barBorder() {
-    bar.style.borderWidth = config.borderWidth;
-    bar.style.borderStyle = config.borderStyle;
-    bar.style.borderColor = config.borderColor;
-    bar.style.borderRadius = config.borderRadius;
+    wrapper.style.borderWidth = config.borderWidth;
+    wrapper.style.borderStyle = config.borderStyle;
+    wrapper.style.borderColor = config.borderColor;
+    wrapper.style.borderRadius = config.borderRadius;
 }
 
 function showProgress() {
@@ -31,5 +34,7 @@ function showProgress() {
 
 function fillBar() {
     progress.style.height = config.height;
+    progress.style.borderRadius = config.borderRadius;
     progress.style.width =  progressBar.progress;
+    progress.style.backgroundColor = progressBar.progressColor;
 }
